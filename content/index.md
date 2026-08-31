@@ -16,7 +16,7 @@ This is where I map the intersection of engineering and storytelling.
 
 \### Quick Links:
 
-\- \[\[Writer's Logic]]
+\- \[\[writers-logic]]
 
 \- \[\[Boeing CRM]]
 
