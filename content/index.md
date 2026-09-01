@@ -7,6 +7,6 @@ title: Digital Garden
 Mapping the intersection of engineering, systems, and storytelling.
 
 ### Explore Notes
-- [[Boeing CRM]]
-- [[writers-logic]]
-- [[creative-frameworks]]
+- [[01_Seed/Boeing CRM|Boeing CRM]]
+- [[01_Seed/writers-logic|writers-logic]]
+- [[01_Seed/creative-frameworks|creative-frameworks]]
