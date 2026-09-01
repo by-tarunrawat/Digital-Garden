@@ -4,4 +4,4 @@ Welcome to my evolving thoughts on how story structure and system design mirror 
 
 ### Core Concepts
 - Narrative logic operates just like a state machine.
-- To understand how this works in practice, explore [[Writer's Logic]].
+- To understand how this works in practice, explore [[writers-logic]].
