@@ -1,22 +1,11 @@
-\---
-
+﻿---
 title: Tarun's Digital Garden
+---
 
-\---
-
-
-
-\# Welcome to my Narrative Systems Lab
-
-
+# Welcome to my Narrative Systems Lab
 
 This is where I map the intersection of engineering and storytelling.
 
-
-
-\### Quick Links:
-
-\- \[\[writers-logic]]
-
-\- \[\[Boeing CRM]]
-
+### Quick Links:
+- [[creative-frameworks]]
+- [[writers-logic]]
