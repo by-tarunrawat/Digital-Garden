@@ -4,4 +4,6 @@ Audience picks.
 In case of the wrong answer the story goes ahead following the audience choice, but we soon realize it was a dead end. The audience has to select another option. 
 In case the choice is correct. The story moves forward and more clues are given. 
 Based on the clues, another question is given.
-The story ends when the audience has answered all the questions correctly and the mystery in the story is solved. 
+The story ends when the audience has answered all the questions correctly and the mystery in the story is solved.
+
+Related concept: [[01_Seed/cognitive-load-in-ui|Cognitive Load in UI]]

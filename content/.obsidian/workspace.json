@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Seed/Boeing CRM.md",
+                "file": "01_Seed/Interactive Logic Flipkart.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Boeing CRM"
+              "title": "Interactive Logic Flipkart"
             }
           }
         ],
@@ -196,12 +196,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "be6e1fa74c032d33",
+  "active": "6f14c54e0956f99a",
   "lastOpenFiles": [
+    "01_Seed/cognitive-load-in-ui.md",
+    "01_Seed/Interactive Logic Flipkart.md",
+    "Untitled.md",
+    "01_Seed/Boeing CRM.md",
     "index.md",
     "01_Seed/writers-logic.md",
-    "01_Seed/Interactive Logic Flipkart.md",
-    "01_Seed/Boeing CRM.md",
     "Welcome.md",
     "01_Seed/creative-frameworks.md",
     "Untitled",
