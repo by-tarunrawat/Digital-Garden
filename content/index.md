@@ -10,3 +10,4 @@ Mapping the intersection of engineering, systems, and storytelling.
 - [[01_Seed/Boeing CRM|Boeing CRM]]
 - [[01_Seed/writers-logic|writers-logic]]
 - [[01_Seed/creative-frameworks|creative-frameworks]]
+- [[01_Seed/Interactive Logic Flipkart|Interactive Logic Flipkart]]
