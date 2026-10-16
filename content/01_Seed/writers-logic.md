@@ -1,3 +1,20 @@
+---
+title: Writer's Logic
+tags:
+  - writing
+  - dialogue
+  - character-dynamics
+---
+
+# Writer's Logic: Subtext and Tension
+
+Dramatic dialogue is rarely about information transfer; it is an exercise in power navigation and unspoken status.
+
+### The Cockpit Gradient in Drama
+When two characters have an asymmetric power dynamic, conflict surfaces as indirect language and polite evasion. 
+
+For the mechanics of this dynamic under pressure, see [[01_Seed/Boeing CRM|Crew Resource Management]]. When writing scenes with escalating stakes, polite deference between characters often ratchets up tension far better than open shouting.
+
 Skills:
 Story writing - Writing stories based on different story structure. Creating plot. World Building. Themes. 
 Screenplay - Constructing scenes that make an impact. Bring new elements. Move plot forward. Reveal character. 
