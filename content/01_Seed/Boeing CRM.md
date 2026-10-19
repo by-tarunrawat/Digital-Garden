@@ -4,6 +4,7 @@ tags:
   - systems
   - aviation
   - communication
+draft: "true"
 ---
 
 # Crew Resource Management

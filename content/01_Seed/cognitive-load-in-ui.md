@@ -3,6 +3,8 @@ title: Cognitive Load in UI
 tags:
   - design
   - systems
+  - draft
+publish: "false"
 ---
 
 # Cognitive Load in UI

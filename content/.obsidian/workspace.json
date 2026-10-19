@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "01_Seed/cognitive-load-in-ui.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "cognitive-load-in-ui"
             }
           }
         ]
@@ -187,12 +187,12 @@
   },
   "active": "ae72fdfb287e2db2",
   "lastOpenFiles": [
-    "01_Seed/creative-frameworks.md",
-    "01_Seed/writers-logic.md",
-    "index.md",
-    "01_Seed/Interactive Logic Flipkart.md",
     "01_Seed/Boeing CRM.md",
     "01_Seed/cognitive-load-in-ui.md",
+    "01_Seed/creative-frameworks.md",
+    "index.md",
+    "01_Seed/writers-logic.md",
+    "01_Seed/Interactive Logic Flipkart.md",
     "Welcome.md",
     "Untitled",
     "03_Evergreen",
