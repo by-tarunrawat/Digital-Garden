@@ -56,6 +56,8 @@ When writing a particular episode you decide what the objectives are for that ep
 
 Adaptation: To adapt a novel or a story for screen, you need to understand what the story is about first. Then list down the scenes in the novel to determine what scenes are descriptive and which ones are visual. Analyze all the scenes, which ones are required and which ones can be cut. Figure out if the descriptive scenes are important to the story. If yes, then make the descriptive scenes visual. Create a broad story and a character bible.
 
+Testing Sync one click
+
 [[Boeing CRM]]
 
 
