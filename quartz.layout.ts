@@ -41,7 +41,34 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+  localGraph: {
+    drag: true,
+    zoom: true,
+    depth: 1, // Depth of neighborhood links displayed (1 or 2)
+    scale: 1.1,
+    repelForce: 0.5, // How strongly nodes push each other away (default ~0.5)
+    centerForce: 0.3, // Pull toward center
+    linkDistance: 30, // Pixel length of connecting springs
+    fontSize: 0.6,
+    opacityScale: 1,
+    removeTags: [], // Tags to hide completely from the graph
+    showTags: true, // Whether tags display as interactive nodes
+  },
+  globalGraph: {
+    drag: true,
+    zoom: true,
+    depth: -1, // -1 shows the entire vault network
+    scale: 0.9,
+    repelForce: 0.7, // Higher value spaces out crowded clusters
+    centerForce: 0.2,
+    linkDistance: 45,
+    fontSize: 0.5,
+    opacityScale: 1,
+    removeTags: ["draft", "archive"], // Hide utility tags
+    showTags: true,
+  },
+}),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
