@@ -1,3 +1,44 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* Graph View Visual Styling */
+.graph {
+  /* Connection lines between notes */
+  & > svg line {
+    stroke: var(--lightgray);
+    stroke-opacity: 0.6;
+    stroke-width: 1.2px;
+  }
+
+  /* Unvisited / regular note circles */
+  & > svg circle {
+    fill: var(--gray);
+    transition: fill 0.2s ease, r 0.2s ease;
+
+    /* Current active page node */
+    &.active {
+      fill: var(--secondary);
+      stroke: var(--tertiary);
+      stroke-width: 2px;
+    }
+
+    /* Tag nodes (if showTags is true) */
+    &.tag {
+      fill: var(--tertiary);
+    }
+
+    /* Hovered node highlight */
+    &:hover {
+      fill: var(--secondary);
+      cursor: pointer;
+    }
+  }
+
+  /* Text labels next to nodes */
+  & > svg text {
+    fill: var(--darkgray);
+    font-family: var(--codeFont);
+    font-size: 10px;
+    pointer-events: none;
+  }
+}
