@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Seed/First-Entry.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "First-Entry"
+              "title": "index"
             }
           }
         ]
@@ -187,10 +187,10 @@
   },
   "active": "ae72fdfb287e2db2",
   "lastOpenFiles": [
+    "01_Seed/First-Entry.md",
     "01_Seed/writers-logic.md",
     "01_Seed/cognitive-load-in-ui.md",
     "01_Seed/creative-frameworks.md",
-    "01_Seed/First-Entry.md",
     "Welcome.md",
     "01_Seed/Boeing CRM.md",
     "index.md",
