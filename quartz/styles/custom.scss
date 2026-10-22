@@ -42,3 +42,34 @@
     pointer-events: none;
   }
 }
+// --- Reader-First Explorer Ordering ---
+.explorer {
+  ul.overflow,
+  ul.content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  // 1. Completed Works / Evergreen
+  li:has(button[data-folderpath*="evergreen"]),
+  li:has(a[href*="evergreen"]) {
+    order: 1 !important;
+  }
+
+  // 2. Works in Progress / Seedlings
+  li:has(button[data-folderpath*="seedling"]),
+  li:has(a[href*="seedling"]) {
+    order: 2 !important;
+  }
+
+  // 3. Thoughts / Seeds
+  li:has(button[data-folderpath*="seed"]),
+  li:has(a[href*="seed"]) {
+    order: 3 !important;
+  }
+
+  // All other pages/folders sit below the 3 core folders
+  li {
+    order: 10;
+  }
+}
