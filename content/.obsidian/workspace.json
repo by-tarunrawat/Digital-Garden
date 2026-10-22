@@ -25,14 +25,10 @@
             "id": "aaba5dbcc4fdb8d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Template/Scene-Study-Template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Scene-Study-Template"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -202,9 +198,11 @@
   },
   "active": "aaba5dbcc4fdb8d3",
   "lastOpenFiles": [
+    "Template/Scene-Study-Template.md",
+    "02_Seedling/Pacing Tension Through Micro-Behaviors.md",
+    "01_Seed/The sound of hinges.md",
     "Template/Story-Seed-Template.md",
     "Template/Essay-Template.md",
-    "Template/Scene-Study-Template.md",
     "Template/Seed-Template.md",
     "02_Seedling/index.md",
     "03_Evergreen/index.md",
