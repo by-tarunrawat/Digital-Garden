@@ -19,15 +19,17 @@ const configuredExplorer = Component.Explorer({
   title: "Explorer",
   folderDefaultState: "open",
   folderClickBehavior: "collapse",
-  useSavedState: true,
+  useSavedState: false, // Set to false so browser localStorage doesn't remember a stuck/closed state
   // 1. Hide templates, drafts, and tags
   filterFn: (node) => {
     const exclude = ["template", "templates", "tags"]
-    const segment = (node.slugSegment ?? "").toLowerCase()
+    const segment = (node?.slugSegment ?? "").toLowerCase()
     return !exclude.includes(segment)
   },
   // 2. Format display titles
   mapFn: (node) => {
+    if (!node || typeof node.displayName !== "string") return
+
     node.displayName = node.displayName.replace(/^\d+[_-\s]*/, "")
 
     const customNames: Record<string, string> = {
@@ -50,23 +52,21 @@ const configuredExplorer = Component.Explorer({
       node.displayName = customNames[keyBySlug]
     }
   },
-  // 3. Enforce Reader-First sorting: Completed works (1) -> Works in progress (2) -> Thoughts (3)
+  // 3. Enforce Reader-First sorting safely
   sortFn: (a, b) => {
-    if (a.isFolder !== b.isFolder) {
-      return a.isFolder ? -1 : 1
-    }
+    const isFolderA = (a.children && a.children.length > 0) || a.isFolder
+    const isFolderB = (b.children && b.children.length > 0) || b.isFolder
+
+    if (isFolderA && !isFolderB) return -1
+    if (!isFolderA && isFolderB) return 1
 
     const getRank = (node: typeof a): number => {
-      const slug = (node.slugSegment ?? "").toLowerCase()
-      const display = String(node.displayName ?? "").toLowerCase()
+      const slug = String(node?.slugSegment ?? "").toLowerCase()
+      const display = String(node?.displayName ?? "").toLowerCase()
 
-      // Rank 1: Completed works (Evergreen)
       if (slug.includes("evergreen") || display.includes("completed")) return 1
-      // Rank 2: Works in progress (Seedlings)
       if (slug.includes("seedling") || display.includes("work")) return 2
-      // Rank 3: Thoughts (Seeds)
       if (slug.includes("seed") || display.includes("thought")) return 3
-
       return 99
     }
 
@@ -77,7 +77,10 @@ const configuredExplorer = Component.Explorer({
       return rankA - rankB
     }
 
-    return String(a.displayName ?? "").localeCompare(String(b.displayName ?? ""), undefined, {
+    const nameA = String(a?.displayName ?? a?.slugSegment ?? "")
+    const nameB = String(b?.displayName ?? b?.slugSegment ?? "")
+
+    return nameA.localeCompare(nameB, undefined, {
       numeric: true,
       sensitivity: "base",
     })
