@@ -14,18 +14,18 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// Reusable Explorer configuration for both Content and List layouts
+// Reusable Explorer with strict Reader-First sorting and folder renaming
 const configuredExplorer = Component.Explorer({
   title: "Explorer",
   folderDefaultState: "open",
   folderClickBehavior: "collapse",
   useSavedState: true,
-  // 1. Hide templates and internal tags
+  // 1. Hide templates, drafts, and tags
   filterFn: (node) => {
     const exclude = ["template", "templates", "tags"]
     return !exclude.includes(node.slugSegment.toLowerCase())
   },
-  // 2. Format and rename display titles
+  // 2. Format display titles
   mapFn: (node) => {
     node.displayName = node.displayName.replace(/^\d+[_-\s]*/, "")
 
@@ -33,11 +33,11 @@ const configuredExplorer = Component.Explorer({
       "seed": "Thoughts",
       "seeds": "Thoughts",
       "01_seed": "Thoughts",
-      "seedling": "Work in Progress",
-      "seedlings": "Work in Progress",
-      "02_seedling": "Work in Progress",
-      "evergreen": "Completed Essays",
-      "03_evergreen": "Completed Essays",
+      "seedling": "Works in progress",
+      "seedlings": "Works in progress",
+      "02_seedling": "Works in progress",
+      "evergreen": "Completed works",
+      "03_evergreen": "Completed works",
     }
 
     const keyByDisplay = node.displayName.toLowerCase().trim()
@@ -49,59 +49,45 @@ const configuredExplorer = Component.Explorer({
       node.displayName = customNames[keyBySlug]
     }
   },
-// 3. Enforce Reader-First folder ordering
+  // 3. Enforce Reader-First sorting: Completed works -> Works in progress -> Thoughts
   sortFn: (a, b) => {
-    // Keep folders on top of individual files
     if (a.isFolder !== b.isFolder) {
       return a.isFolder ? -1 : 1
     }
 
-    // Rank 1: Evergreen / Completed Essays
-    // Rank 2: Seedling / Work in Progress
-    // Rank 3: Seed / Thoughts
-    const getRank = (node: typeof a) => {
-      const slug = (node.slugSegment ?? "").toLowerCase().trim()
-      const display = (node.displayName ?? "").toLowerCase().trim()
-
-      if (slug.includes("evergreen") || display.includes("completed")) return 1
-      if (slug.includes("seedling") || display.includes("work")) return 2
-      if (slug.includes("seed") || display.includes("thought")) return 3
-      return 99
-    }
-const rankA = getRank(a)
-    const rankB = getRank(b)
-
-    if (rankA !== rankB) {
-      return rankA - rankB
-    }
-
-    // Default alphabetical sort for items with the same rank
-    return a.displayName.localeCompare(b.displayName, undefined, {
-      numeric: true,
-      sensitivity: "base",
-    })
-  },
-
-    const order: Record<string, number> = {
+    const rankOrder: Record<string, number> = {
+      // 1. Completed works (Evergreen)
+      "completed works": 1,
+      "completed essays": 1,
       "03_evergreen": 1,
       "evergreen": 1,
+
+      // 2. Works in progress (Seedlings)
+      "works in progress": 2,
+      "work in progress": 2,
       "02_seedling": 2,
       "seedling": 2,
       "seedlings": 2,
+
+      // 3. Thoughts (Seeds)
+      "thoughts": 3,
+      "thought": 3,
       "01_seed": 3,
       "seed": 3,
       "seeds": 3,
     }
 
-    const orderA = order[a.slugSegment.toLowerCase()] ?? 99
-    const orderB = order[b.slugSegment.toLowerCase()] ?? 99
+    const nameA = String(a.displayName || a.slugSegment || "").toLowerCase().trim()
+    const nameB = String(b.displayName || b.slugSegment || "").toLowerCase().trim()
 
-    if (orderA !== orderB) {
-      return orderA - orderB
+    const rankA = rankOrder[nameA] ?? 99
+    const rankB = rankOrder[nameB] ?? 99
+
+    if (rankA !== rankB) {
+      return rankA - rankB
     }
 
-    // Default alphabetical sort for items within the same bucket
-    return a.displayName.localeCompare(b.displayName, undefined, {
+    return String(a.displayName || "").localeCompare(String(b.displayName || ""), undefined, {
       numeric: true,
       sensitivity: "base",
     })
