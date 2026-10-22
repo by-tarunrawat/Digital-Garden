@@ -14,76 +14,55 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// Reusable Explorer with strict Reader-First sorting and folder renaming
-const configuredExplorer = Component.Explorer({
+// Reusable Explorer with safe tree traversal and reverse alphabetical folder order
+const gardenExplorer = Component.Explorer({
   title: "Explorer",
   folderDefaultState: "open",
   folderClickBehavior: "collapse",
-  useSavedState: false, // Set to false so browser localStorage doesn't remember a stuck/closed state
-  // 1. Hide templates, drafts, and tags
+  useSavedState: false,
   filterFn: (node) => {
     const exclude = ["template", "templates", "tags"]
     const segment = (node?.slugSegment ?? "").toLowerCase()
     return !exclude.includes(segment)
   },
-  // 2. Format display titles
   mapFn: (node) => {
     if (!node || typeof node.displayName !== "string") return
 
+    // Strip "01_", "02_", etc. for display
     node.displayName = node.displayName.replace(/^\d+[_-\s]*/, "")
 
     const customNames: Record<string, string> = {
       "seed": "Thoughts",
       "seeds": "Thoughts",
-      "01_seed": "Thoughts",
       "seedling": "Works in progress",
       "seedlings": "Works in progress",
-      "02_seedling": "Works in progress",
       "evergreen": "Completed works",
-      "03_evergreen": "Completed works",
     }
 
-    const keyByDisplay = node.displayName.toLowerCase().trim()
-    const keyBySlug = (node.slugSegment ?? "").toLowerCase().trim()
-
-    if (customNames[keyByDisplay]) {
-      node.displayName = customNames[keyByDisplay]
-    } else if (customNames[keyBySlug]) {
-      node.displayName = customNames[keyBySlug]
+    const key = node.displayName.toLowerCase().trim()
+    if (customNames[key]) {
+      node.displayName = customNames[key]
     }
   },
-  // 3. Enforce Reader-First sorting safely
   sortFn: (a, b) => {
-    const isFolderA = (a.children && a.children.length > 0) || a.isFolder
-    const isFolderB = (b.children && b.children.length > 0) || b.isFolder
+    const hasChildrenA = Boolean(a?.children && a.children.length > 0)
+    const hasChildrenB = Boolean(b?.children && b.children.length > 0)
 
-    if (isFolderA && !isFolderB) return -1
-    if (!isFolderA && isFolderB) return 1
+    // Folders first
+    if (hasChildrenA && !hasChildrenB) return -1
+    if (!hasChildrenA && hasChildrenB) return 1
 
-    const getRank = (node: typeof a): number => {
-      const slug = String(node?.slugSegment ?? "").toLowerCase()
-      const display = String(node?.displayName ?? "").toLowerCase()
-
-      if (slug.includes("evergreen") || display.includes("completed")) return 1
-      if (slug.includes("seedling") || display.includes("work")) return 2
-      if (slug.includes("seed") || display.includes("thought")) return 3
-      return 99
+    // Reverse sort for the top-level numbered folders: 03_Evergreen -> 02_Seedling -> 01_Seed
+    if (hasChildrenA && hasChildrenB) {
+      const segA = String(a?.slugSegment ?? "")
+      const segB = String(b?.slugSegment ?? "")
+      return segB.localeCompare(segA, undefined, { numeric: true })
     }
 
-    const rankA = getRank(a)
-    const rankB = getRank(b)
-
-    if (rankA !== rankB) {
-      return rankA - rankB
-    }
-
+    // Standard A-Z sort for notes within a folder
     const nameA = String(a?.displayName ?? a?.slugSegment ?? "")
     const nameB = String(b?.displayName ?? b?.slugSegment ?? "")
-
-    return nameA.localeCompare(nameB, undefined, {
-      numeric: true,
-      sensitivity: "base",
-    })
+    return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: "base" })
   },
 })
 
@@ -111,7 +90,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    configuredExplorer,
+    gardenExplorer,
   ],
   right: [
     Component.Graph({
@@ -162,7 +141,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    configuredExplorer,
+    gardenExplorer,
   ],
   right: [],
 }
