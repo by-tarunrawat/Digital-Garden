@@ -42,34 +42,34 @@
     pointer-events: none;
   }
 }
-// --- Reader-First Explorer Ordering ---
-.explorer {
-  ul.overflow,
-  ul.content {
-    display: flex !important;
-    flex-direction: column !important;
-  }
+/* --- Enforce Reader-First Folder Visual Order --- */
+ul.explorer-ul {
+  display: flex !important;
+  flex-direction: column !important;
 
-  // 1. Completed Works / Evergreen
-  li:has(button[data-folderpath*="evergreen"]),
-  li:has(a[href*="evergreen"]) {
+  /* 1. Completed works (Evergreen) */
+  > li:has(.folder-title:is(:contains("Completed works"), :contains("Completed"), :contains("Evergreen"))),
+  > li:has(a[data-for*="evergreen"]),
+  > li:has(a[href*="evergreen"]) {
     order: 1 !important;
   }
 
-  // 2. Works in Progress / Seedlings
-  li:has(button[data-folderpath*="seedling"]),
-  li:has(a[href*="seedling"]) {
+  /* 2. Works in progress (Seedling) */
+  > li:has(.folder-title:is(:contains("Works in progress"), :contains("Work"), :contains("Seedling"))),
+  > li:has(a[data-for*="seedling"]),
+  > li:has(a[href*="seedling"]) {
     order: 2 !important;
   }
 
-  // 3. Thoughts / Seeds
-  li:has(button[data-folderpath*="seed"]),
-  li:has(a[href*="seed"]) {
+  /* 3. Thoughts (Seed) */
+  > li:has(.folder-title:is(:contains("Thoughts"), :contains("Seed"))),
+  > li:has(a[data-for*="seed"]),
+  > li:has(a[href*="seed"]) {
     order: 3 !important;
   }
 
-  // All other pages/folders sit below the 3 core folders
-  li {
-    order: 10;
+  /* Fallback: Standard folder fallback order */
+  > li:nth-child(1) {
+    order: 1 !important;
   }
 }
