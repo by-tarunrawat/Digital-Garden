@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Evergreen/index.md",
+                "file": "02_Seedling/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -202,6 +202,7 @@
   },
   "active": "aaba5dbcc4fdb8d3",
   "lastOpenFiles": [
+    "03_Evergreen/index.md",
     "02_Seedling/index.md",
     "01_Seed/index.md",
     "Template/Story-Seed-Template.md",
@@ -210,7 +211,6 @@
     "Template/Scene-Study-Template.md",
     "Welcome.md",
     "index.md",
-    "03_Evergreen/index.md",
     "01_Seed/coffee-shop-glance.md",
     "Template",
     "01_Seed/First-Entry.md",
