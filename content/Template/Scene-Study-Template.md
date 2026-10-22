@@ -1,6 +1,5 @@
 ---
-title: '"{{title}}"'
-date: '"{{date}}"'
+title: "{{title}}"
 tags:
   - seedling
   - craft

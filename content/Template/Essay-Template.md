@@ -1,6 +1,5 @@
 ---
-title: '"{{title}}"'
-date: '"{{date}}"'
+title: "{{title}}"
 tags:
   - evergreen
   - craft
@@ -8,7 +7,6 @@ tags:
 aliases: []
 draft: true
 ---
-
 # {{title}}
 
 > **Summary / Core Thesis:** A one or two-sentence takeaway capturing the central principle of this piece.
