@@ -1,9 +1,6 @@
 ---
-title: "{{title}}"
-date:
-  "{ date }":
-lastmod:
-  "{ date }":
+title: '"{{title}}"'
+date: '"{{date}}"'
 tags:
   - evergreen
   - craft
