@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Template/Story-Seed-Template.md",
+                "file": "03_Evergreen/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Story-Seed-Template"
+              "title": "index"
             }
           }
         ],
@@ -202,15 +202,15 @@
   },
   "active": "aaba5dbcc4fdb8d3",
   "lastOpenFiles": [
+    "02_Seedling/index.md",
+    "01_Seed/index.md",
+    "Template/Story-Seed-Template.md",
     "Template/Seed-Template.md",
     "Template/Essay-Template.md",
     "Template/Scene-Study-Template.md",
     "Welcome.md",
-    "Template/Story-Seed-Template.md",
     "index.md",
     "03_Evergreen/index.md",
-    "02_Seedling/index.md",
-    "01_Seed/index.md",
     "01_Seed/coffee-shop-glance.md",
     "Template",
     "01_Seed/First-Entry.md",
