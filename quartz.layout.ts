@@ -14,21 +14,61 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// Reusable Explorer with safe tree traversal and reverse alphabetical folder order
+// Reusable Explorer with strict Reader-First sorting and folder renaming
 const gardenExplorer = Component.Explorer({
   title: "Explorer",
   folderDefaultState: "open",
   folderClickBehavior: "collapse",
   useSavedState: false,
+  // 1. Force sort to execute BEFORE mapFn so folder names still have their 01/02/03 prefixes
+  order: ["filter", "sort", "map"],
   filterFn: (node) => {
     const exclude = ["template", "templates", "tags"]
-    const segment = (node?.slugSegment ?? "").toLowerCase()
+    const segment = String(node?.slugSegment ?? "").toLowerCase()
     return !exclude.includes(segment)
   },
+  // 2. Sort folders strictly by our Reader-First rank
+  sortFn: (a, b) => {
+    const hasChildrenA = Boolean(a?.children && a.children.length > 0)
+    const hasChildrenB = Boolean(b?.children && b.children.length > 0)
+
+    // Keep folders grouped above standalone files
+    if (hasChildrenA && !hasChildrenB) return -1
+    if (!hasChildrenA && hasChildrenB) return 1
+
+    if (hasChildrenA && hasChildrenB) {
+      const getFolderRank = (node: typeof a): number => {
+        const seg = String(node?.slugSegment ?? "").toLowerCase()
+        const disp = String(node?.displayName ?? "").toLowerCase()
+
+        // Rank 1: Completed works (03_Evergreen)
+        if (seg.includes("03") || seg.includes("evergreen") || disp.includes("completed")) return 1
+        // Rank 2: Works in progress (02_Seedling)
+        if (seg.includes("02") || seg.includes("seedling") || disp.includes("work")) return 2
+        // Rank 3: Thoughts (01_Seed)
+        if (seg.includes("01") || seg.includes("seed") || disp.includes("thought")) return 3
+
+        return 99
+      }
+
+      const rankA = getFolderRank(a)
+      const rankB = getFolderRank(b)
+
+      if (rankA !== rankB) {
+        return rankA - rankB
+      }
+    }
+
+    // Default alphabetical sort for notes within a folder
+    const nameA = String(a?.displayName ?? a?.slugSegment ?? "")
+    const nameB = String(b?.displayName ?? b?.slugSegment ?? "")
+    return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: "base" })
+  },
+  // 3. Rename display titles AFTER sorting has finished
   mapFn: (node) => {
     if (!node || typeof node.displayName !== "string") return
 
-    // Strip "01_", "02_", etc. for display
+    // Strip "01_", "02_", etc.
     node.displayName = node.displayName.replace(/^\d+[_-\s]*/, "")
 
     const customNames: Record<string, string> = {
@@ -43,26 +83,6 @@ const gardenExplorer = Component.Explorer({
     if (customNames[key]) {
       node.displayName = customNames[key]
     }
-  },
-  sortFn: (a, b) => {
-    const hasChildrenA = Boolean(a?.children && a.children.length > 0)
-    const hasChildrenB = Boolean(b?.children && b.children.length > 0)
-
-    // Folders first
-    if (hasChildrenA && !hasChildrenB) return -1
-    if (!hasChildrenA && hasChildrenB) return 1
-
-    // Reverse sort for the top-level numbered folders: 03_Evergreen -> 02_Seedling -> 01_Seed
-    if (hasChildrenA && hasChildrenB) {
-      const segA = String(a?.slugSegment ?? "")
-      const segB = String(b?.slugSegment ?? "")
-      return segB.localeCompare(segA, undefined, { numeric: true })
-    }
-
-    // Standard A-Z sort for notes within a folder
-    const nameA = String(a?.displayName ?? a?.slugSegment ?? "")
-    const nameB = String(b?.displayName ?? b?.slugSegment ?? "")
-    return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: "base" })
   },
 })
 
