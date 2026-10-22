@@ -1,10 +1,9 @@
 ---
 title: Welcome
 ---
+A working lab for storytelling, narrative craft, and the creative mechanics behind visual scenes, rhythm, and character.
 
-A working lab for storytelling, narrative craft, and the creative mechanics behind visual art, music, and place.
-
-### Active Threads
-- [[01_Seed/index|Seeds]]: Unformed premises, stray observations, dialogue fragments.
-- [[02_Seedling/index|Seedlings]]: Scene deconstructions, character studies, visual pacing notes.
-- [[03_Evergreen/index|Essays & Syntheses]]: Completed breakdowns on narrative structure, composition, and craft.
+### Stages of Growth
+- [[01_Seed/index|Seeds]]: Unformed sparks, stray observations, and raw premises.
+- [[02_Seedling/index|Seedlings]]: Scene studies, character dynamic teardowns, and pacing experiments.
+- [[03_Evergreen/index|Evergreen]]: Formed essays and permanent narrative craft principles.

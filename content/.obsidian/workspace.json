@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "01_Seed/coffee-shop-glance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "coffee-shop-glance"
+            }
+          },
+          {
+            "id": "aaba5dbcc4fdb8d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Template/Essay-Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Essay-Template"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,17 +200,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "ae72fdfb287e2db2",
+  "active": "aaba5dbcc4fdb8d3",
   "lastOpenFiles": [
+    "Template/Scene-Study-Template.md",
+    "Template/Essay-Template.md",
+    "Template/Seed-Template.md",
+    "Template/Story-Seed-Template.md",
+    "index.md",
+    "03_Evergreen/index.md",
+    "02_Seedling/index.md",
+    "01_Seed/index.md",
+    "01_Seed/coffee-shop-glance.md",
+    "Template",
     "01_Seed/First-Entry.md",
     "01_Seed/writers-logic.md",
     "01_Seed/cognitive-load-in-ui.md",
     "01_Seed/creative-frameworks.md",
     "Welcome.md",
     "01_Seed/Boeing CRM.md",
-    "index.md",
     "01_Seed/Interactive Logic Flipkart.md",
-    "Untitled",
     "03_Evergreen",
     "02_Seedling",
     "01_Seed"
