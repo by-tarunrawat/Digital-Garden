@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Template/Essay-Template.md",
+                "file": "Template/Story-Seed-Template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Essay-Template"
+              "title": "Story-Seed-Template"
             }
           }
         ],
@@ -202,10 +202,10 @@
   },
   "active": "aaba5dbcc4fdb8d3",
   "lastOpenFiles": [
-    "Welcome.md",
+    "Template/Seed-Template.md",
     "Template/Essay-Template.md",
     "Template/Scene-Study-Template.md",
-    "Template/Seed-Template.md",
+    "Welcome.md",
     "Template/Story-Seed-Template.md",
     "index.md",
     "03_Evergreen/index.md",

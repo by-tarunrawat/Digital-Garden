@@ -1,10 +1,11 @@
 ---
 title: "{{title}}"
-date: {{date}}
+date:
+  "{ date }":
 tags:
   - seed
   - narrative
-draft: false
+draft: true
 ---
 
 # {{title}}

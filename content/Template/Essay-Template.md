@@ -1,13 +1,15 @@
 ---
 title: "{{title}}"
-date: {{date}}
-lastmod: {{date}}
+date:
+  "{ date }":
+lastmod:
+  "{ date }":
 tags:
   - evergreen
   - craft
   - essay
 aliases: []
-draft: false
+draft: true
 ---
 
 # {{title}}

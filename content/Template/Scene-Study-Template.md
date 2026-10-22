@@ -1,10 +1,11 @@
 ---
 title: "{{title}}"
-date: {{date}}
+date:
+  "{ date }":
 tags:
   - seedling
   - craft
-draft: false
+draft: true
 ---
 
 # {{title}}
