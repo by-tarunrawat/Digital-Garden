@@ -11,7 +11,7 @@ draft: false
 Instead of escalating confrontation through dialogue, stretching tension across inanimate objects and sensory rituals.
 
 ## The Underlying Mechanism
-When sensory input is hyper-focused—such as listening to a lock engage or [[The Sound of Hinges]]—the audience slows down to match the character's internal processing speed.
+When sensory input is hyper-focused—such as listening to a lock engage or [[01_Seed/The Sound of Hinges|The Sound of Hinges]]—the audience slows down to match the character's internal processing speed.
 
 ## Connected Notes
-- [[The Sound of Hinges]]
+- [[01_Seed/The Sound of Hinges|The Sound of Hinges]]
