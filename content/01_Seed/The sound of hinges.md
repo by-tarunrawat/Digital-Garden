@@ -3,7 +3,7 @@ title: The sound of hinges
 tags:
   - seed
   - narrative
-draft: true
+draft: false
 date: 2026-10-22
 ---
 # The Sound of Hinges

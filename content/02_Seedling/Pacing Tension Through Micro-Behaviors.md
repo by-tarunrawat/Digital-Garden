@@ -1,9 +1,9 @@
 ---
-title: "Pacing Tension Through Micro-Behaviors"
+title: Pacing Tension Through Micro-Behaviors
 tags:
   - seedling
   - craft
-draft: true
+draft: false
 ---
 # Pacing Tension Through Micro-Behaviors
 
