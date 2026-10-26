@@ -1,9 +1,24 @@
 ---
 title: Welcome
 ---
-A working lab for storytelling, narrative craft, and the creative mechanics behind visual scenes, rhythm, and character.
+---
 
-### Stages of Growth
-- [[01_Seed/index|Seeds]]: Unformed sparks, stray observations, and raw premises.
-- [[02_Seedling/index|Seedlings]]: Scene studies, character dynamic teardowns, and pacing experiments.
-- [[03_Evergreen/index|Evergreen]]: Formed essays and permanent narrative craft principles.
+# Welcome to My Digital Garden
+
+Unlike a traditional chronological blog, this space is a collection of living notes, creative fiction, craft essays, and raw observations that evolve over time. 
+
+---
+
+### How to Navigate
+
+* **[[03_Evergreen/|Completed Works]]**: Polished essays, finished fiction, and complete analyses.
+* **[[02_Seedling/|Works in Progress]]**: Developing theories, scene studies, and active projects in motion.
+* **[[01_Seed/|Thoughts]]**: Raw sparks, sensory anchors, and atomic observations.
+
+---
+
+### Recent Notes & Core Threads
+* [[02_Seedling/Pacing Tension Through Micro-Behaviors|Pacing Tension Through Micro-Behaviors]] — Studying pacing mechanics through inanimate friction.
+* [[01_Seed/The sound of hinges|The Sound of Hinges]] — Sensory observation on emotional room tone.
+
+> *"A garden is never finished; it is tended, re-routed, and pruned."*
