@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/Kidnapping story.md",
+      "target_folder": "Fiction_Vault/Stories_In_Progress",
+      "new_filename": "Giraffe_Designs_and_the_Ten_Foot_Escape.md",
+      "title": "Giraffe Designs: The Ten-Foot Smoke Escape, Rotten Toilets, and Mahishasur Mantri",
+      "date": "2018-05-28",
+      "type": "fiction_spine",
+      "medium": "short_story",
+      "era": "2018_Crucible",
+      "verdict": "Story Spine",
+      "stage": "in_progress",
+      "core_theme": "Workplace alienation: sneaking past a micromanaging boss for a 13-rupee cigarette, decaying office bathrooms, and endless marketing briefs",
+      "core_spark": "Sharmita tiptoeing past Mr. Achyutan's cabin at Giraffe Designs LLC; freezing in ballet poses when someone sneezes; getting saddled with a 3-day Mahishasur pitch brief; escaping outside to face a buzzing phone with 7 unread messages from dad",
+      "next_action": "Connect directly as an opening chapter or scene prelude to The Runaway Escape Arc",
+      "parent_pillar": "",
+      "harvest_snippets": [
+        {
+          "section": "voice",
+          "sub_section": "Institutional & Corporate Satire",
+          "snippet": "> \"The name Giraffe was a personal insight from Mr. Achyutan: '...it signifies the ability to look over barriers.' He was proud of that analogy... A pungent smell invaded her nose like invisible little Roman soldiers... She had spent 2 years 5 months and 21 days out of her 2 years 5 months and 23 days in the company avoiding coming here... 'Take these pages... Research the company. The pitch is Monday next week. We don't want any mistakes. Do we?'\" (May 28, 2018)"
+        }
+      ],
+      "checklist": [
+        "[ ] Link Sharmita's escape to [[The_Runaway_Escape_Arc_Master_Bible]]",
+        "[ ] Polish the sensory tension of tiptoeing past the boss's cabin"
+      ],
+      "related_notes": [
+        "[[The_Runaway_Escape_Arc_Master_Bible]]",
+        "[[The_Cant_Say_No_Man_and_NR_Doshi_Partners]]",
+        "[[Voice_and_Dialogue_Scraps]]"
+      ]
+    },
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/Marriage_funnyfilters_SD.md",
+      "target_folder": "01_Seed",
+      "new_filename": "The_Shaadi_Hogwarts_and_the_Mother_March.md",
+      "title": "The Shaadi Hogwarts: Matrimonial Extremism, Grocery Bride-Hunting, and Post-25 Guilt",
+      "date": "2018-05-29",
+      "type": "seed",
+      "medium": "essay",
+      "era": "2018_Crucible",
+      "verdict": "Garden Seed",
+      "stage": "seed",
+      "core_theme": "Stand-up comedy premise: middle-class Indian maternal desperation around marriage, grocery bargaining for brides, and an elite academy for matrimonial pressure",
+      "core_spark": "Mothers bargaining for brides like fresh produce; watching Game of Thrones and praising Sansa for marrying early; imagining a Hogwarts-style academy for moms teaching emotional blackmail, where divorce is Voldemort and Dumbledore invests in Shaadi.com",
+      "next_action": "Synthesize with MOC_03 as a structured stand-up comedy and satire set",
+      "parent_pillar": "MOC_03_Cultural_Critique_and_Satire",
+      "harvest_snippets": [
+        {
+          "section": "voice",
+          "sub_section": "Dark Humor, Satire & Absurdist Scraps",
+          "snippet": "> \"Marriages are like democracy, everybody has a say, and your vote doesn't count... She goes to buy groceries and starts fishing for brides for her son. She'll ask about height and weight, she'll ask about freshness... What would a school for mothers look like? An old aunty comes with a belan and tells mom she has been accepted to Hogwarts... Professor Dumbledore: why is he so great? He has gotten millions of people married. He is the investor in shaadi.com.\" (May 29, 2018)"
+        }
+      ],
+      "checklist": [
+        "[ ] Combine sketch beats with mom_harry potter into a unified satirical script",
+        "[ ] Add the 'Marriages are like democracy' line to [[Voice_and_Dialogue_Scraps]]"
+      ],
+      "related_notes": [
+        "[[The_Smarter_God_and_the_Evolution_of_Sin]]",
+        "[[Voice_and_Dialogue_Scraps]]",
+        "[[MOC_03_Cultural_Critique_and_Satire]]"
+      ]
+    },
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/mom_harry potter.md",
+      "target_folder": "Fiction_Vault/Cold_Storage",
+      "new_filename": "Mom_Harry_Potter_Shaadi_Draft_Consolidated.md",
+      "title": "Mom Harry Potter Shaadi Draft (Consolidated)",
+      "date": "2018-05-29",
+      "type": "archive_log",
+      "medium": "journal_log",
+      "era": "2018_Crucible",
+      "verdict": "Cold Storage",
+      "stage": "archived",
+      "core_theme": "Working notes on the Hogwarts academy for Indian mothers, synthesized into The_Shaadi_Hogwarts_and_the_Mother_March.md",
+      "core_spark": "Absorbed into main seed",
+      "next_action": "Archived in Cold Storage; core thoughts preserved in main seed",
+      "parent_pillar": "",
+      "harvest_snippets": [],
+      "checklist": ["[x] Consolidated into The_Shaadi_Hogwarts_and_the_Mother_March.md"],
+      "related_notes": ["[[The_Shaadi_Hogwarts_and_the_Mother_March]]"]
+    },
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/Pointers.md",
+      "target_folder": "Fiction_Vault/Stories_In_Progress",
+      "new_filename": "The_Maggi_Weed_Pandemic_Odyssey.md",
+      "title": "The Maggi-Weed Odyssey: Bombay Lockdowns, Auto-Cannibal Zombies, and Dehradun",
+      "date": "2018-05-30",
+      "type": "fiction_spine",
+      "medium": "short_story",
+      "era": "2018_Crucible",
+      "verdict": "Story Spine",
+      "stage": "in_progress",
+      "core_theme": "Dystopian dark-comedy adventure: escaping a zombie-infested Mumbai to rescue mother in Dehradun with a stash of instant noodles and weed",
+      "core_spark": "A pandemic where news anchors parrot propaganda while infected humans eat their own organs; a protagonist surviving on Maggi who flees across India accompanied by a stoner girl, two armed survivors, and a movie star; featuring a tragic zombie who doesn't realize she has turned",
+      "next_action": "Develop into a high-concept satirical horror-comedy outline in Stories_In_Progress",
+      "parent_pillar": "",
+      "harvest_snippets": [
+        {
+          "section": "voice",
+          "sub_section": "Dark Humor, Satire & Absurdist Scraps",
+          "snippet": "> \"Viral Zombie infection. If the zombie does not eat human flesh, it will eat its own body from the inside... A zombie's POV: This Zombie hasn't fully converted. She thinks she is still human. She hides from other zombies. At the end she is trapped in between other zombies. The drama builds but they ignore her. She is confused as to why. She finds out that she has turned into a zombie as well.\" (May 30, 2018)"
+        }
+      ],
+      "checklist": [
+        "[ ] Flesh out the Mumbai to Dehradun road trek checkpoints",
+        "[ ] Polish the poignant monologue of the un-converted zombie looking in the mirror"
+      ],
+      "related_notes": [
+        "[[The_Gerbil_Wheel_and_the_Motorcycle_Jesus]]",
+        "[[Voice_and_Dialogue_Scraps]]"
+      ]
+    },
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/Sample story for PTKK.md",
+      "target_folder": "Fiction_Vault/Stories_In_Progress",
+      "new_filename": "The_Blue_Tick_Illusion_and_the_Bhutan_Poster.md",
+      "title": "The Blue Tick Illusion: Balcony Mauritius, Vegan Lies, and the 100-Rupee Poster",
+      "date": "2018-05-30",
+      "type": "fiction_spine",
+      "medium": "short_story",
+      "era": "2018_Crucible",
+      "verdict": "Story Spine",
+      "stage": "in_progress",
+      "core_theme": "Contemporary romantic satire on influencer culture: staging fake luxury travel with cheap printed posters, chasing algorithmic validation, and performative love",
+      "core_spark": "Sameer staging Mauritius beach shots on a windy Bangalore balcony while yelling at a boy holding a poster; falling in love with agency influencer Disha who eats chicken parathas off-camera while preaching veganism; losing authentic love to obtain a verified blue tick",
+      "next_action": "Refine into a feature-length screenplay or episodic pilot in Stories_In_Progress",
+      "parent_pillar": "",
+      "harvest_snippets": [
+        {
+          "section": "voice",
+          "sub_section": "Institutional & Corporate Satire",
+          "snippet": "> \"The boy turns around, looks straight at the camera and raises his bottle to say cheers... Sameer shouts at another boy holding the poster of a sunset: 'Abey dhang se pakad na. Ud kyun raha hai.'... '100 rupaye me jaan le lo'... Sameer snaps back, 'To kya ghar tere naam kar dun... Ispe hashtag mauritius daalna hai. Yaad rakhna.'\" (May 30, 2018)"
+        },
+        {
+          "section": "voice",
+          "sub_section": "Dark Humor, Satire & Absurdist Scraps",
+          "snippet": "> \"'Sir hame pata hai ki aap chahen to aaj hi dono jagah ja sakte hain. Right?... Aap apne followers ko bewakoof bana sakte hain. Hame thodi na... Hame to bas aapke followers se matlab hai. Is hafte dono jagah chale jayiyega.'\" (May 30, 2018)"
+        }
+      ],
+      "checklist": [
+        "[ ] Combine the Characters.md dossiers into the head of this script file",
+        "[ ] Polish the sharp dialogue beats between Sameer, Prerna, and Disha"
+      ],
+      "related_notes": [
+        "[[The_Runaway_Escape_Arc_Master_Bible]]",
+        "[[Voice_and_Dialogue_Scraps]]",
+        "[[MOC_03_Cultural_Critique_and_Satire]]"
+      ]
+    },
+    {
+      "source_path": "00_Archive_Triage/Raw_Imports/Characters.md",
+      "target_folder": "Fiction_Vault/Cold_Storage",
+      "new_filename": "Influencer_Characters_Draft_Consolidated.md",
+      "title": "Influencer Characters Draft (Consolidated)",
+      "date": "2018-05-30",
+      "type": "archive_log",
+      "medium": "journal_log",
+      "era": "2018_Crucible",
+      "verdict": "Cold Storage",
+      "stage": "archived",
+      "core_theme": "Working character dossiers for Sameer, Prerna, and Disha, synthesized into The_Blue_Tick_Illusion_and_the_Bhutan_Poster.md",
+      "core_spark": "Absorbed into main script file",
+      "next_action": "Archived in Cold Storage; dossiers incorporated into main story",
+      "parent_pillar": "",
+      "harvest_snippets": [],
+      "checklist": ["[x] Consolidated into The_Blue_Tick_Illusion_and_the_Bhutan_Poster.md"],
+      "related_notes": ["[[The_Blue_Tick_Illusion_and_the_Bhutan_Poster]]"]
+    }
+  ]
+}

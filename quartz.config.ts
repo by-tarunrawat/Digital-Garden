@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "bytarunrawat.com",
-    ignorePatterns: ["private", "templates", ".obsidian", "template"],
+    ignorePatterns: ["private", "templates", ".obsidian", "template", "Fiction_Vault/**", "00_Archive_Triage/**", "99_Templates/**", "**/*.py", "**/*.ps1", "**/*.json"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

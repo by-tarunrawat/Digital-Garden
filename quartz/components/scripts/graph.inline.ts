@@ -193,12 +193,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
-  // calculate color
+  // calculate color with digital garden maturity mapping
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (d.id.startsWith("tags/")) {
+      return "#888888"
+    } else if (d.id.startsWith("03_Evergreen")) {
+      return "#2a9d8f" // Emerald Green for Completed Works
+    } else if (d.id.startsWith("02_Seedling")) {
+      return "#e76f51" // Warm Amber / Terracotta for Works in Progress
+    } else if (d.id.startsWith("01_Seed")) {
+      return "#8492a6" // Slate Gray for Raw Seeds / Thoughts
+    } else if (d.id === "index") {
+      return "#4361ee" // Indigo / Blue accent for Garden Homepage Hub
+    } else if (visited.has(d.id)) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]

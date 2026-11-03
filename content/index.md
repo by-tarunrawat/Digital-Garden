@@ -11,9 +11,9 @@ Unlike a traditional chronological blog, this space is a collection of living no
 
 ### How to Navigate
 
-* **[[03_Evergreen/|Completed Works]]**: Polished essays, finished fiction, and complete analyses.
-* **[[02_Seedling/|Works in Progress]]**: Developing theories, scene studies, and active projects in motion.
-* **[[01_Seed/|Thoughts]]**: Raw sparks, sensory anchors, and atomic observations.
+* **[[03_Evergreen/index|Completed Works]]**: Polished essays, finished fiction, and complete analyses.
+* **[[02_Seedling/index|Works in Progress]]**: Developing theories, scene studies, and active projects in motion.
+* **[[01_Seed/index|Thoughts]]**: Raw sparks, sensory anchors, and atomic observations.
 
 ---
 

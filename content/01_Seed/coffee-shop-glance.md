@@ -23,4 +23,4 @@ draft: false
 
 
 ## Cross-Links & Open Threads
-<!-- Related ideas or techniques: e.g. [[the-sensory-mismatch]] -->
+<!-- Related ideas or techniques: e.g. **the sensory mismatch** -->

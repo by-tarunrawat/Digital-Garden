@@ -94,34 +94,34 @@ export const defaultContentPageLayout: PageLayout = {
     gardenExplorer,
   ],
   right: [
-    Component.Graph({
-      localGraph: {
-        drag: true,
-        zoom: true,
-        depth: 1,
-        scale: 1.1,
-        repelForce: 0.5,
-        centerForce: 0.3,
-        linkDistance: 30,
-        fontSize: 0.6,
-        opacityScale: 1,
-        removeTags: [],
-        showTags: true,
-      },
-      globalGraph: {
-        drag: true,
-        zoom: true,
-        depth: -1,
-        scale: 0.9,
-        repelForce: 0.7,
-        centerForce: 0.2,
-        linkDistance: 45,
-        fontSize: 0.5,
-        opacityScale: 1,
-        removeTags: ["draft", "archive"],
-        showTags: true,
-      },
-    }),
+Component.Graph({
+  localGraph: {
+    drag: true,
+    zoom: true,
+    depth: 1,
+    scale: 1.1,
+    repellingForce: 0.7, // Increased repulsion to spread nodes out
+    centerForce: 0.2,    // Gentle pull to center
+    linkDistance: 45,    // Clean link spacing between related notes
+    fontSize: 0.6,
+    opacityScale: 1,
+    showTags: false,     // Keeps the local graph focused purely on note connections
+    focusOnHover: true,
+  },
+  globalGraph: {
+    drag: true,
+    zoom: true,
+    depth: -1,
+    scale: 0.9,
+    repellingForce: 0.8,
+    centerForce: 0.2,
+    linkDistance: 50,
+    fontSize: 0.5,
+    opacityScale: 1,
+    showTags: true,      // Allows tag hubs in full garden view
+    focusOnHover: true,
+  },
+}),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

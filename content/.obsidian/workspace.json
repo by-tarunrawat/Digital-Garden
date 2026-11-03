@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0ed55598fa918fa1",
+        "id": "a59f38b79f82c10d",
         "type": "tabs",
         "children": [
           {
-            "id": "299ad350d62f2a71",
+            "id": "9d1444f5602bac2f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "New tab"
             }
           }
         ]
@@ -158,56 +154,83 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Seed/Boeing CRM & Scene logic.md",
+                "file": "00_Archive_Triage/Triage_Dashboard.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Boeing CRM & Scene logic"
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "4f5fbff2db496bd5",
+            "type": "leaf",
+            "state": {
+              "type": "fountain-sidebar",
+              "state": {},
+              "icon": "list-tree",
+              "title": "Fountain Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 274.2999267578125,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "fountain:New fountain document": false
     }
   },
-  "active": "299ad350d62f2a71",
+  "active": "9d1444f5602bac2f",
   "lastOpenFiles": [
-    "02_Seedling/Pacing Tension Through Micro-Behaviors.md",
-    "01_Seed/The sound of hinges.md",
-    "Template/Essay-Template.md",
-    "Template/Scene-Study-Template.md",
-    "Template/Seed-Template.md",
-    "01_Seed/coffee-shop-glance.md",
-    "Template/Story-Seed-Template.md",
-    "02_Seedling/index.md",
-    "03_Evergreen/index.md",
-    "01_Seed/index.md",
-    "Welcome.md",
-    "index.md",
-    "Template",
-    "01_Seed/First-Entry.md",
-    "01_Seed/writers-logic.md",
-    "01_Seed/cognitive-load-in-ui.md",
-    "01_Seed/creative-frameworks.md",
-    "01_Seed/Boeing CRM.md",
-    "01_Seed/Interactive Logic Flipkart.md",
-    "03_Evergreen",
-    "02_Seedling",
-    "01_Seed"
+    "test_bundles.py",
+    "Fiction_Vault/Stories_In_Progress/The_Astrological_Chink_in_the_Armor.md",
+    "Fiction_Vault/Stories_In_Progress/The_Archaeological_Time_Heist.md",
+    "Fiction_Vault/Stories_In_Progress/Chakra_Time_Loop/Raw_Archive/Outline_3Act_Cursed_Village_TimeLoop_Full.md",
+    "NotebookLM_Bundles/Bundle_Fiction_Swipe_and_Spines.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/Time_Travelling_Girls_Hawking_Encounter.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Zen_Highway_Sniper.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Whitefield_Murder_Research.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Watering_Hole_Treaty_and_the_Great_Beasts.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Wall_Balcony_and_3AM_Mediator.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Terrace_Cigarette_Romantic_Heist.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Suffocating_Elevator_Opening.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Slam_Book_Friends_and_Rajkumars_Dirty_Books.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Signboard_Painter.md",
+    "Fiction_Vault/Stories_In_Progress/Sketches_and_Monologues/The_Secret_Girlfriend_and_North_Indian_Teasing.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Kid_Mela_Gun_Tea_Hostage.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Kargil_Colonel_and_the_Brinjal_Plot.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Intercepted_Ransom.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Inherited_Transistor_Radio.md",
+    "Fiction_Vault/Stories_In_Progress/Sketches_and_Monologues/The_Hundred_Dicks_Flower_Monologue.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Gerbil_Wheel_and_the_Motorcycle_Jesus.md",
+    "Fiction_Vault/Stories_In_Progress/Sketches_and_Monologues/The_Five_Minute_Mallu_Wedding_Monologue.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Cobbler_on_the_Mountain_and_the_Life_Exchange.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/The_Cheetal_Dhaba_Extortion.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/One_Year_After_Triptych.md",
+    "Fiction_Vault/Stories_In_Progress/Short_Stories/Giraffe_Designs_and_the_Ten_Foot_Escape.md",
+    "Fiction_Vault/Stories_In_Progress/Series_Spines_and_Treatments",
+    "Fiction_Vault/Stories_In_Progress/Sketches_and_Monologues",
+    "Fiction_Vault/Stories_In_Progress/Pradeep_Kukkad/Raw_Archive",
+    "Fiction_Vault/Stories_In_Progress/Pradeep_Kukkad",
+    "triage_pradeep_kukkad.py",
+    "patch_stories_schema.py",
+    "audit_stories_schema.py",
+    "standardize_frontmatter.py",
+    "gate_bundles.py",
+    "verify_bom_status.py"
   ]
 }
